@@ -7,6 +7,8 @@ require_once __DIR__ .'/lib/DB/MysqliDb.php';
 
 $action = isset($_GET['action']) ? $_GET['action'] : 'index';
 
+
+//** */
 $config = require 'config/config.php';
 $db = new MysqliDb(
     $config['db_host'],
